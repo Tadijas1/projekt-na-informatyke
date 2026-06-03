@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+header{
+    background:linear-gradient(135deg,#1e293b,#0f172a);
+    padding:40px 10%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-bottom:2px solid lightskyblue;
+}
+
+
+.logo{
+    font-size:42px;
+    font-weight:bold;
+    color: aqua;
+}
+
+nav {
+    position: absolute;
+    right: 5%;
+}
+
+#link {
+    position: absolute;
+    left: 2%;
+}
+
+#link a {
+    font-size: 20px;
+}
+
+#link a:hover {
+    color: lime;
+}
+
+#link a:visited {
+    text-decoration: underline;
+    color: purple;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    font-weight:bold;
+    font-size: 25px;
+}
+
+
+nav a:hover{
+    color:lightskyblue;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+section{
+    padding:80px 10%;
+}
+
+.opis{
+    height:84.3vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    padding:20px 5%;
+    background:
+        linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
+        url('../pictures/background-główna.jpg') center/cover;
+}
+
+.dystrybujce {
+    height: 84.3vh;
+    background:
+        linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
+        url('../pictures/background-główna.jpg') center/cover;
+}
+
+#historia {
+    background:
+        linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
+        url('../pictures/historia.png') center/cover;
+}
+
+#nie_tylko_komputer {
+    background:
+        linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
+        url('../pictures/linux\ wokół\ nas.jpeg') center/cover;
+        background-size: contain;
+}
+
+#vs {
+    background:
+        linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
+        url('../pictures/vs.webp') center/cover;
+}
+
+/* .podstrona p {
+    font-size: 25px;
+    text-align: left;
+} */
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:lightskyblue;
+}
+
+#tekst p{
+    width: 60%;
+    max-width: 1500px;
+}
+
+.opis-tekst h1{
+    font-size:60px;
+    margin-bottom:20px;
+    color:lightskyblue;
+}
+
+.opis-tekst p{
+    max-width:700px;
+    margin:auto;
+    font-size:30px;
+    text-align: justify;
+    margin-bottom:30px;
+}
+
+
+.opis-obrazek {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#h_obrazek img {
+    max-width: 112%;
+    border-radius: 10px;
+}
+
+#n_obrazek img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#vs_obrazek img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    background:lightskyblue;
+    color:#0f172a;
+    font-weight:bold;
+    border-radius:8px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+.kafelki{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.kafelek{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    border:1px solid transparent;
+}
+
+.kafelek:hover{
+    transform:translateY(-10px);
+    border:1px solid lightskyblue;
+}
+
+.kafelek img{
+    width:100%;
+    height: 500px;
+    object-fit:cover;
+}
+
+.kafelek-tekst{
+    padding:25px;
+}
+
+.kafelek-tekst h3{
+    margin-bottom:15px;
+    color:lightskyblue;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:30px;
+    border-top:2px solid lightskyblue;
+}
+
+footer p{
+    color:#94a3b8;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .opis-tekst h1{
+        font-size:42px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
