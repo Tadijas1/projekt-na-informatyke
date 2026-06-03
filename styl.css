@@ -86,33 +86,33 @@ section{
     padding:20px 5%;
     background:
         linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
-        url('../pictures/background-główna.jpg') center/cover;
+        url('pictures/background-główna.jpg') center/cover;
 }
 
 .dystrybujce {
     height: 84.3vh;
     background:
         linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
-        url('../pictures/background-główna.jpg') center/cover;
+        url('pictures/background-główna.jpg') center/cover;
 }
 
 #historia {
     background:
         linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
-        url('../pictures/historia.png') center/cover;
+        url('pictures/historia.png') center/cover;
 }
 
 #nie_tylko_komputer {
     background:
         linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
-        url('../pictures/linux\ wokół\ nas.jpeg') center/cover;
+        url('pictures/linux\ wokół\ nas.jpeg') center/cover;
         background-size: contain;
 }
 
 #vs {
     background:
         linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
-        url('../pictures/vs.webp') center/cover;
+        url('pictures/vs.webp') center/cover;
 }
 
 /* .podstrona p {
